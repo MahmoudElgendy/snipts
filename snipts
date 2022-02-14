@@ -99,6 +99,8 @@ where Poster is of type IFormFile
 # check if exist genre with given id or not
 _context.Genres.AnyAsync(g=>g.Id==dto.GenreId)
 --------------------------------------------------------
-
+#better to use different dtos for create and update
+----------------------------------------------------------
+# service layer just work with entities no dtos at all
 
 
