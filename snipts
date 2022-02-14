@@ -90,7 +90,7 @@ api end point best practices
 
 update => send id,[fromBody] dto
 
-remove => there is no removeAsync
+remove => there is no removeAsync or updateAsync
 -------------------------------------------
  # get extention of file 
 (Path.GetExtension(dto.Poster.FileName).ToLower()
