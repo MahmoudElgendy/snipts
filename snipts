@@ -1,0 +1,104 @@
+// select from multble joins
+var employeeRecord = from employee in employees
+                                 join department in departments on employee.DepartmentId equals department.Id into table1
+                                 from department in table1.ToList()
+                                 join Level in levels on employee.LevelId equals Level.Id into table2
+                                 from Level in table2.ToList()
+                                 select new 
+                                 {
+                                    EmployeeName= employee.Name,
+                                    DepartmentName= department.Name,
+                                    LevelName= Level.Name
+                                 };
+-----------------------------------------------------------
+ //mulit select in abp angular
+<div class="mb-3">
+          <ng-multiselect-dropdown
+          [placeholder]="'custom placeholder'"
+          [settings]="dropdownSettings"
+          [data]="states"
+          formControlName="statesIds"
+          (onSelect)="onItemSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+        >
+</ng-multiselect-dropdown>
+</div>
+
+---------------------------------
+// allow origin in core api 
+-ConfigureServices
+services.AddCors();
+-Configure
+app.UseCors(c=>c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+--------------------------------------------
+// add authorization to core api
+-- ConfigureService
+-- single one for all endpoints
+   c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Autorixation",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter your JWT key"
+                });
+-- one for each endpoint
+c.AddSecurityRequirement(
+                    new OpenApiSecurityRequirement
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference=new OpenApiReference
+                                {Type=ReferenceType.SecurityScheme,
+                                    Id="Bearer"
+                                },
+                                Name="Bearer",
+                                In=ParameterLocation.Header
+                            },new List<string>()
+                        } }
+                    );
+
+------------------------------------------------------------
+3 main packages for EF 
+- microsoft.entityframworkcore
+- microsoft.entityframworkcore.sqlserver
+- microsoft.entityframworkcore.tool> design
+
+-----------------------------------------------------
+# dbcontext constructor difinition
+public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options): base (options)
+        {
+
+        }
+
+------------------------
+# register dbcontext 
+-- ConfigureService
+ services.AddDbContext<ApplicationDbContext>(options=> 
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+            );
+ ----------------------------------------------
+<nullable>enable</nullable> 
+that means all properties in the application are required
+--------------------------
+global usings (like import views)
+----------------------------------
+api end point best practices
+ create , update, delete => return created , updated , deleted object
+
+update => send id,[fromBody] dto
+
+remove => there is no removeAsync
+-------------------------------------------
+ # get extention of file 
+(Path.GetExtension(dto.Poster.FileName).ToLower()
+where Poster is of type IFormFile
+----------------------------------------------------
+# check if exist genre with given id or not
+_context.Genres.AnyAsync(g=>g.Id==dto.GenreId)
+--------------------------------------------------------
+
+
+
