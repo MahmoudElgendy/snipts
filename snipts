@@ -114,4 +114,8 @@ public class ResponseMessage
 ------------------------------------------
 best practise for fullfill lookups(drop down lists)
 use model not view bag
+------------------------------------------------------------------
+to change list<x> to List<y> u can use linq
+list<x>.select(a=> new y{....})
+----------------------------------------------------------------------
 
