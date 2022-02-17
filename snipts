@@ -111,5 +111,7 @@ public class ResponseMessage
         public string Message { get; set; }
         public int ItemId { get; set; }
     }
-
+------------------------------------------
+best practise for fullfill lookups(drop down lists)
+use model not view bag
 
