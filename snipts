@@ -102,5 +102,14 @@ _context.Genres.AnyAsync(g=>g.Id==dto.GenreId)
 #better to use different dtos for create and update
 ----------------------------------------------------------
 # service layer just work with entities no dtos at all
+------------------------------------------------------------------
+# ResponseMessage is a good way to return values
+public class ResponseMessage
+    {
+        public bool IsSuccess { get; set; }
+        public object ResponseData { get; set; }
+        public string Message { get; set; }
+        public int ItemId { get; set; }
+    }
 
 
