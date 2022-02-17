@@ -118,4 +118,5 @@ use model not view bag
 to change list<x> to List<y> u can use linq
 list<x>.select(a=> new y{....})
 ----------------------------------------------------------------------
-
+Salah auditing
+in autorization filter set value of userId with current user id
