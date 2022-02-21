@@ -42,3 +42,27 @@ node_modules => the folder contains all applications
 
 ctr+ , => opens the settings then type exclude to exclude any type of files you need
 ------------------------------------------------------------------------------------------------------------
+
+How angular bootstrapped an application?
+
+1- Angular.json=>important info about environment and settings and lunching and bootstrapping
+2- in this file udner bulid seciton there are main which determine the starup file (main.ts)
+3- main.ts inside platformBrowserDynamic.bootstrapModule(... there are the main modlule to start....)
+4- inside the defalut app(AppModule) inside NgModule directive >bootstrap >the name of first componet to run.
+5- inside this component use the selector to use it in the index page the single page of the application
+
+for pieps u can chain more than one 
+
+  title = this._title.setTitle( 'angular-movies | ');
+  
+  oninit() code inside it execute right after instantiate the component
+  
+ -- passing data from parent to child (make your component reusable)
+  suppose u need to display 2 lists of movies one for curren and second for upcomming
+  put data in parent component and pass diffrent list for each child
+  
+  <app-movies-list [movies]="upcommingMovies"></app-movies-list>
+  <h4>upcomming</h4>
+  <app-movies-list [movies]="movies"></app-movies-list>
+  
+  passing parameters to parent (react to the user input)
