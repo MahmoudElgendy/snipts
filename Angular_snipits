@@ -1,0 +1,44 @@
+angular js => web framework(lemetited to code) mvc.
+andgular => platform(related to all software life cycle) component.
+
+Anatomy:-
+ Modules
+ Component
+ Directives
+ Services
+ Pipes
+ Routing
+ 
+ Modules => group set of elements in application in one single unit  
+            application may have more than one module but at least one(represent the initial component of the app)
+            aclass with ngModule dicorator
+ component => a class with @Componet   directive
+              peace of ui with data and logic
+              Eent Bindings - property bindigs
+              
+ Directives => away to transform elements of Html 
+              component ->
+              structural -> alter the dom (ng if , ing for)
+              attribute-> cnange appearance of behavior of  existing elements
+              
+Pieps => transform data frm one form to antother      
+
+Services => to share data and logic not only related to  specifically component.
+
+routing=> for navigation
+ 
+horizontal scaling=> add more servers to process information.
+vertical scale improve the characteristics of existing servers.(add more ram) 
+ 
+ installation steps
+1-  while installing node download the recommending version (last stable vertion)
+2- install angular  npm i -g @angular/cli
+3- if you want to upgrad your .ne go for dot net and download SDk(not runtime) then run it
+for vs code (some extenions)=> Angular Language,c#
+dotnet tool install --global dotnet-ef => helps you to use entityframework form command line
+better to have both frontend and back separated so you  can deploy them separatly.
+
+node_modules => the folder contains all applications
+
+ctr+ , => opens the settings then type exclude to exclude any type of files you need
+------------------------------------------------------------------------------------------------------------
