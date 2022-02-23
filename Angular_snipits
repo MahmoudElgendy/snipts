@@ -66,3 +66,32 @@ for pieps u can chain more than one
   <app-movies-list [movies]="movies"></app-movies-list>
   
   passing parameters to parent (react to the user input)
+  
+ng group => used to group a set of element.
+we cann't use ngif and ngfor in same div tag
+- can you declare variable inside html not ts??
+-- yes by useing Template variable
+- how?
+--set #variable name in any input dom element to make it template variable u can then use it.
+can we pass html content as a paramenter (not value all component)?
+yes by useing content projection
+
+ng-content && ng-container
+angular material => library contains many componets
+to install it  ng add @angualr/material
+notice that :-
+angular material is huge library u may not use all so
+u can generate module for it here u add all angular material modules u need then import this module into ur app module
+ngclass help me to add css dynamically
+lifecycle of a component => the different stages componet goes through we can execute functions in each of thes stages (hocks)
+onInit()
+onChanges()=> fires when parameters of  the componet are updated from the outside(some times may fire before onInit())
+onDestrou()=>just before componet is destroyed
+DoCheck()=>each time the change detectore gets executed by angular
+afterVeiwInit()=>when content of component had been rendered(subscrip to chages to property decorated with viewchild decorator
+afterViewChecked
+afterContentInit
+aftercontentChecked
+-------
+global styling:-
+applyed for all components (style.css)
