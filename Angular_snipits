@@ -68,9 +68,10 @@ for pieps u can chain more than one
   passing parameters to parent (react to the user input)
   
 ng group => used to group a set of element.
-we cann't use ngif and ngfor in same div tag
+we cann't use ngif and ngfor in same div tag because we cant but 2 structural directives in same tag
+so you shoul to nest for inside if but u have to reaplace rapper div with ng-container to keep style
 - can you declare variable inside html not ts??
--- yes by useing Template variable
+-- yes by useing Template variable or decorator (will be discussed later)
 - how?
 --set #variable name in any input dom element to make it template variable u can then use it.
 can we pass html content as a paramenter (not value all component)?
@@ -95,3 +96,8 @@ aftercontentChecked
 -------
 global styling:-
 applyed for all components (style.css)
+
+event Binding => (click)="remove(index)
+property Binding => [movies]="currentMovies"
+
+any change in the module need rerun.
