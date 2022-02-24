@@ -133,3 +133,49 @@ and handleRating the function in the parnt componnt wich will recive the transmi
 
 remember constructor is just for injection services it is not inside lifecycle hocs at all 
 if you want to iniat any values do it inside oninit()
+---------------------------------------------------------------------------------------------------------------------
+routing:-
+1- routing roles - and links
+2-allow navigation from js code
+3- route parameters
+4- wild card to catch non exising routs
+
+configuring routing is very similar to configuer material
+if you dont make it while creating the project:
+1- crete module with name app-routing
+2- import required packages 
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+3-for ngModule configurations set the following
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+  while wouts is a list of type Routes
+  4-const routes: Routes = [
+  
+];
+
+5- inside routes write your route roles Like
+  {path:'routingsegment', component: componentName}
+  router-outlet => the place holder where route component will be displayed
+  hint:- if i have more than on rout-outlet in the whole renderd screen where the routing component will be displayed
+  in the fist occure component
+
+put in appcomponent each comonent or html you want it to appear allover your applicaton and add router-outlet to contain routing components
+
+routerLink="routingsegment" => add it to any compont to naviate to the given routcomponnt
+
+--how to navigate to rout throught code
+
+inject Router in the component u want to make navigation
+this._router.navigate(['/routingsegment']);
+
+to read data from rout 
+inject activatedRoute in the component that will receive the value
+
+this.activatedRouter.params.subscribe(params=>{
+params.id
+})
+
+use wild card to handl all kind of unavailble routs but you have to put it at the end so while all route rule not match then find it
+{path:'**', component: defaultComponent}
+
