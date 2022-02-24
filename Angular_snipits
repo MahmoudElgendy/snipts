@@ -87,7 +87,7 @@ ngclass help me to add css dynamically
 lifecycle of a component => the different stages componet goes through we can execute functions in each of thes stages (hocks)
 onInit()
 onChanges()=> fires when parameters of  the componet are updated from the outside(some times may fire before onInit())
-onDestrou()=>just before componet is destroyed
+onDestrou()=>just before componet is destroyed good for cleaning resources
 DoCheck()=>each time the change detectore gets executed by angular
 afterVeiwInit()=>when content of component had been rendered(subscrip to chages to property decorated with viewchild decorator
 afterViewChecked
@@ -101,3 +101,35 @@ event Binding => (click)="remove(index)
 property Binding => [movies]="currentMovies"
 
 any change in the module need rerun.
+to swich between ts - html - css install (angular2 swicher extention)
+Alt+o => html
+Alt+i => css
+Alt+u=>ts
+Alt+p=>spec
+there are 9 mouse events
+Click dblclick Mouseover Mouseenter Mouseleave Mousedown Mouseup Drag Dragover
+ngfor how to iterate fixed number of times?
+in your ts file declare array with the number u need then use it
+this.maxRatingArr = Array(5);
+output (coustom events) send data from child to parent
+some times when using the class EventEmitter you get this error ( event emitter is not generic)
+solution: make sue you import it form the right package @angular/core
+
+// declaring like transporter to hold the data you want to move
+----in child component
+@Output()
+OnRating:EventEmitter<number> = new EventEmitter<number>();
+  
+// that means you want to send this value to the parent in cas of rating event happend
+ this.OnRating.emit(this.selectedRate);
+ Not you never touch the child html file all in ts
+---- end of child component
+
+---- in parent compont
+<app-rating (OnRating)="handlRating($event)"></app-rating> // html file
+while on Rating represents the outpout property in the child component
+and handleRating the function in the parnt componnt wich will recive the transmitted data 
+----- end of parnt component
+
+remember constructor is just for injection services it is not inside lifecycle hocs at all 
+if you want to iniat any values do it inside oninit()
