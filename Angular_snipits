@@ -179,3 +179,31 @@ params.id
 use wild card to handl all kind of unavailble routs but you have to put it at the end so while all route rule not match then find it
 {path:'**', component: defaultComponent}
 
+
+Template-Driven Vs Ractive Forms
+Template-Driven => configurations mainly in html (component template)
+more powerful so you can make custom condition validaations or validations based on specific condition (also it let html clean)
+reactive forms => configuratins mainly in ts (component class)
+
+formGroup=> bind to the form in the ts
+formControlName =>bind to each property
+
+foreach flaidation rule u add you have to handle it
+you can create generic form for create and update that validate and display properities and have event immetter for the logic
+and use it inside create and update where u only do the logic (save changes())
+this.form.valuechanges.subscribe()=> helps you to react with any changes in the form
+[disable]="form.invalid"=>  
+
+another way to install needed packages
+type it in package.json then run npm i
+
+<<< steps to create project >>>
+1- create project
+2-install material , leaflet
+--create material module
+-- make it import
+4- prepare module class
+3- create static components
+4- create routing
+
+
