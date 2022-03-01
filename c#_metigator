@@ -24,3 +24,23 @@ var sliceRange = ..2;
 var scile = frinds[sliceRange]
 
 outofrange exception you want index larger than array length.
+-----------------------------------------------------------------------------
+empty string not null
+Expressions:- (anu thing ends with single value)
+
+primary expressions => has value 
+null operators
+
+null coalescing ??
+string s1= null;
+ s1=s1??"Issam";
+ 
+ conditional null(used to solve null reference exception)
+  string s1= null;
+  var s2 =S1?.ToUpper(); ===> var s2 = (s1 is null):null : s1.toupper();
+  -----------------------------------------------------------------------------
+  delegates:-
+  passing condition to  a function (make condition dynamic)
+  or you can say pass peice of function
+ multicaste delegate can refer to more than one function
+ 
