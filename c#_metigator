@@ -1,1 +1,26 @@
 
+&& || short circits can save me alot of time
+
+a ^ b => only true if both are different 
+
+int x=1;
+int y=2;
+int z=x+y;
+print(z) => good for readability
+
+print (x+y)=> good for performance
+Ternary opetator:- 
+string x= (x==y)? "accept" :"reject" 
+
+Array => reference type values is fixed and next to eachother in the mempry
+array types => normal, multidimention , jagged(array of not equal array more petter i in performance)
+
+var frinds = new string{"a","b","c","d","e"};
+var slice = frinds[..2] ====> a,b
+var slice = frinds[2..3] ====>c
+var slice = frinds[2..^2] ====>c (starting from 2 skipp last 2 elements (not indexes)
+
+var sliceRange = ..2;
+var scile = frinds[sliceRange]
+
+outofrange exception you want index larger than array length.
