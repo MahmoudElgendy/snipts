@@ -44,3 +44,17 @@ string s1= null;
   or you can say pass peice of function
  multicaste delegate can refer to more than one function
  
+ -----------------------------------------------------------------
+ 
+ generic function
+ generic class
+ generic constratints => class any<T> where T : class , new ()
+ colletcons vs generic lists
+ collections not type save ex(ArrayList)
+ --------------------------------------------------------------------
+  generic delegate types
+  Action => return void , take up to 16 paramenter
+  Func => retrun one value , take up to 16 parameter
+  Predicate => return one boolean and take one parameter
+  
+ 
