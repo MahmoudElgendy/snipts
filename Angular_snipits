@@ -209,3 +209,17 @@ type it in package.json then run npm i
 -----------------------------------------------------
 general skills you need with angular
 1- install 3rd part libreries lik material - bootstrap - toaster
+------------------------------------------------------------------------------
+routing roles:-
+1-(attribute routing ) =>in controller
+2- (conventional routing)=> in startup class
+ modelling means mapping values form http request to action parameters
+ 
+ bindRequire => forceing sender to send specific parameter
+ bindNever =>binding to htis parameter should not accured value will alway be null
+ [frombody] - [fromheader] - ...=> represents the source for this parameter
+ 
+ validationAttribute
+ validatableObject => not recomended becase error fire just after attribute errors
+ 
+ ----------------------------------------------------------------------------------
