@@ -223,3 +223,12 @@ routing roles:-
  validatableObject => not recomended becase error fire just after attribute errors
  
  ----------------------------------------------------------------------------------
+ claims => informations about user such as name email and role
+JWT = header(algorithm and token type + payload(claims) +signature
+[role]="'admin'" => pass string
+Route Guards => execute functionality just after enter route or just after leave route
+CanActivate => determine if use can inter route
+CanActivateChild=>if user can inter specific child route
+CanDeactivate => determine if a user can leave specific child route
+resolve=>optain data before activate route
+canload=>load feature module async
