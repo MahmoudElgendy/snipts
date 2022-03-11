@@ -232,3 +232,5 @@ CanActivateChild=>if user can inter specific child route
 CanDeactivate => determine if a user can leave specific child route
 resolve=>optain data before activate route
 canload=>load feature module async
+--------------------------------------------
+httpinterceptors
