@@ -56,5 +56,12 @@ string s1= null;
   Action => return void , take up to 16 paramenter
   Func => retrun one value , take up to 16 parameter
   Predicate => return one boolean and take one parameter
-  
+------------------------------------------------------------
+threading 
+t1.join()=> means first finish t1 thin consume with other threads
+race condition=> I don't know which thread will be executed first even if i use join() that happens when 2 or more thread execute the same code 
+the solution is to use lock (grant only on object excute the pice of code at same time)
+Deadlock=> two or more thread waiting for each other to execute
+we can handle deadlock by using monitor
+thread pool=>pre created threads to help readuce costs
  
