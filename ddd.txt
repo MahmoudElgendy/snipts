@@ -1,0 +1,13 @@
+Clean Architecture: Patterns, Practices, and Principles
+-------------------------------------------------------
+focus on what is trully essential to the software archetict varsus what is just implementation detail
+inhabitants means => users, developers build , and developers maintain
+build only what is necessary only when it is necessary
+cosist of 7 projects
+Presentation => ui
+Application=> abstractions corresponding to the application
+Domain=> abstractions corresponding to the problem domain
+persistance=>databse
+infrastructure=>third part dependances
+common=>cross cutting concerns
+speceficatoins=> acceptance test
