@@ -5,9 +5,24 @@ inhabitants means => users, developers build , and developers maintain
 build only what is necessary only when it is necessary
 cosist of 7 projects
 Presentation => ui
-Application=> abstractions corresponding to the application
+Application=> abstractions corresponding to the application(use cases)
 Domain=> abstractions corresponding to the problem domain
 persistance=>databse
 infrastructure=>third part dependances
 common=>cross cutting concerns
 speceficatoins=> acceptance test
+-----------------------------------------
+Domain Centric Architecture
+
+
+1- database centric
+db(data access)=>Business Logic=>UI
+
+2- domain centric
+domain=>application=>persistance,infrastructure,Presentatioin
+
+the first concern of the architect is to make sure that house is usable, it is not to insure that the house is made of brick.
+
+essential VS implementation Details
+
+
