@@ -1,0 +1,2 @@
+if data changes frequently => linked List
+tasks waiting to be processed => stack queue
