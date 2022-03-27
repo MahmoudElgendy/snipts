@@ -43,4 +43,10 @@ sets and hash sets
  Jagged array => array of arrays
 
 stack and queue =>Taskes to be processed  (frequent add and remove)
-add=enque  remove = deque
+add=enque=push  remove = deque = pop
+queue => web page requests, customers to be served ,task to be done 
+stack => undo, call stack,debugging , full bus
+
+linked list => optimized for frequent add and remove but caller should decide whick item to remmove
+remember it is not a list it is a kind of chain
+whay add and remove is so fast be cause you dont need to shift any items
