@@ -33,3 +33,11 @@ dictionary=>designed for findig elements
 Dictionary => not sorted -  use it unless you realy need sorting
 SortedDictionary=>Automatically sort by key  - key must be type that can be sort int or string
 SortedList(it is a dictionary not a list as same as SortedDictionary but different in performance)  most of situations you are not gonna need it u just need it if you sorted the elements already before initiate the sortedlist
+
+sets and hash sets
+ very useful when you want to compine differnt collections together.
+ 
+ hash set dealing with collection as a whole
+ 
+ multidimentinal array => one array with more than one index
+ Jagged array => array of arrays
