@@ -30,5 +30,5 @@ Dictionaries (hash tables) to facilitate lookups without index
 array and list => designed for indexbase lookup and enumerating
 dictionary=>designed for findig elements
 
-Dictionary => not sorted -  
+Dictionary => not sorted -  use it unless you realy need sorting
 SortedDictionary=>Automatically sort by key  - key must be type that can be sort int or string
