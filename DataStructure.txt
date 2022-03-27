@@ -1,2 +1,10 @@
 if data changes frequently => linked List
 tasks waiting to be processed => stack queue
+Enumerate Data=> means you want to access all the items in a collection (foreach)
+
+foreach(var item in items){}
+items called=> iteration variable
+
+in c#8 or newer and dotnet core
+arr.length -1 = ^1 in general ^n means length -n
+
