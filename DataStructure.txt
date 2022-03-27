@@ -41,3 +41,6 @@ sets and hash sets
  
  multidimentinal array => one array with more than one index
  Jagged array => array of arrays
+
+stack and queue =>Taskes to be processed  (frequent add and remove)
+add=enque  remove = deque
