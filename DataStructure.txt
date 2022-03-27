@@ -8,3 +8,5 @@ items called=> iteration variable
 in c#8 or newer and dotnet core
 arr.length -1 = ^1 in general ^n means length -n
 
+how to embeded variable inside string $"myname is {name}"
+
