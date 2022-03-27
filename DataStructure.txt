@@ -25,3 +25,10 @@ once create it and pop up with data numeration operation and replaceing without 
 supperfat for look up 
 not good choice for frequently add and delete
 
+Dictionaries (hash tables) to facilitate lookups without index
+
+array and list => designed for indexbase lookup and enumerating
+dictionary=>designed for findig elements
+
+Dictionary => not sorted -  
+SortedDictionary=>Automatically sort by key  - key must be type that can be sort int or string
