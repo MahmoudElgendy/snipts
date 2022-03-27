@@ -10,3 +10,18 @@ arr.length -1 = ^1 in general ^n means length -n
 
 how to embeded variable inside string $"myname is {name}"
 
+predicate => a set of instructions to insure if a variable satisfy some conditions
+
+array => length
+any other collection => count
+
+in breaf
+use list if you want to add and delete and when you don't know number of items when initialization
+user array if you  dont want to add and delete
+list internally use array so add and delete may be slow because it need to copy elemnts to new array.
+
+best use for lists
+once create it and pop up with data numeration operation and replaceing without increase size operations
+supperfat for look up 
+not good choice for frequently add and delete
+
