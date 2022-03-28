@@ -1,0 +1,6 @@
+golden tip favor composition over inheritance 
+Decorator
+----------
+add additional behavior to the object
+if we use inhertance insteed it will end up with inhertance explosion and each new class can only do on feacher if you want add more than one feature inherit new class
+so that is not maintainable approach
