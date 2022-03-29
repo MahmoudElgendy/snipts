@@ -1,3 +1,3 @@
 MVC Request life cycle:-
 ------------------------------
-Request => Middleware => Routing => controller Initilizer => Action Method Execution => Result Execution => View Render
+Request => Middleware => Routing => controller Initilizer => Action Method Execution => Result Execution => View Render => response
