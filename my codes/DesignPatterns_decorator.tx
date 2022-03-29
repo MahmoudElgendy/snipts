@@ -1,0 +1,98 @@
+namespace DecoratorDP
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //IPizza pizza = new Pizza();
+            //IPizza tomato = new TomatoDecorator(pizza);
+            //IPizza cheese = new CheeseDecorator(pizza);
+
+            //IPizza cheesThenTomato = new TomatoDecorator(cheese);
+            IPizza tomateThenCheese = new OnionDecorator(new CheeseDecorator(new TomatoDecorator(new Pizza())));
+            //Console.WriteLine(tomato.GetPizzaType());
+            //Console.WriteLine(cheese.GetPizzaType());
+            //Console.WriteLine(cheesThenTomato.GetPizzaType());
+            Console.WriteLine(tomateThenCheese.GetPizzaType());
+
+        }
+    }
+
+    #region 1- Base Interface
+    interface IPizza
+    {
+        string GetPizzaType();
+    }
+
+    #endregion
+    #region 2- Concreate Class
+    class Pizza : IPizza
+    {
+        public string GetPizzaType()
+        {
+            return "this is a normal Pizza";
+        }
+    }
+
+    #endregion
+    #region 3- Base Decorator Class
+    class PizzaDecorator : IPizza
+    {
+        private IPizza _pizza;
+        public PizzaDecorator(IPizza pizza)
+        {
+            _pizza = pizza;
+        }
+        public virtual string GetPizzaType()
+        {
+            return _pizza.GetPizzaType();
+        }
+    }
+
+    #endregion
+    #region 4- derrived decorator Classes
+    class CheeseDecorator : PizzaDecorator
+    {
+
+        public CheeseDecorator(IPizza pizza) : base(pizza)
+        {
+
+        }
+        public override string GetPizzaType()
+        {
+            string type = base.GetPizzaType();
+            type += "\r\n with extra cheese";
+            return type;
+        }
+    }
+    class TomatoDecorator : PizzaDecorator
+    {
+
+        public TomatoDecorator(IPizza pizza) : base(pizza)
+        {
+
+        }
+        public override string GetPizzaType()
+        {
+            string type = base.GetPizzaType();
+            type += "\r\n with extra tomato";
+            return type;
+        }
+    }
+
+    class OnionDecorator : PizzaDecorator
+    {
+
+        public OnionDecorator(IPizza pizza) : base(pizza)
+        {
+
+        }
+        public override string GetPizzaType()
+        {
+            string type = base.GetPizzaType();
+            type += "\r\n with extra Onion";
+            return type;
+        }
+    }
+    #endregion
+}
