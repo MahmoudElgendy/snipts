@@ -5,3 +5,8 @@ https://www.youtube.com/watch?v=iUZZ8aBYYtE
 add additional behavior to the object (Rapper design pattern)
 if we use inhertance insteed it will end up with inhertance explosion and we can't mix new functionalities together(each new class can only do on feacher if you want add more than one feature inherit new class)
 so that is not maintainable approach
+1- Base Interface  (IPizza)
+2- Concreate class (Pizza)
+3-Base Decorator  (PizzaDecorator)
+4- Derived Decorators (tomatoPizaa, onion, ....)
+7- main method and wrapping 
