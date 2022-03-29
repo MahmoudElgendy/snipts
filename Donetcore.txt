@@ -9,3 +9,21 @@ routing - session - cors - Authentication - cashing
 Run () => short circt the request
 Use(){the most common} => work on request and pass it to the next component
 Map ()=> Route the request
+-------------------------------
+How to create custm middle ware
+public class HelloMiddleWare
+    {
+        private RequestDelegate _next;
+
+        public HelloMiddleWare(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task Invoke(HttpContext context)
+        {
+        // write the logic you want
+           // await context.Response.WriteAsync("inside custome Hello middle ware");
+            //await _next.Invoke(context);
+        }
+    }
