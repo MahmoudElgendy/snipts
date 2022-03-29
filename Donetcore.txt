@@ -1,3 +1,11 @@
 MVC Request life cycle:-
 ------------------------------
 Request => Middleware => Routing => controller Initilizer => Action Method Execution => Result Execution => View Render => response
+
+Middleeware componets (building blocks of http request pipe line)
+application level infrastructure like
+routing - session - cors - Authentication - cashing
+
+Run () => short circt the request
+Use(){the most common} => work on request and pass it to the next component
+Map ()=> Route the request
