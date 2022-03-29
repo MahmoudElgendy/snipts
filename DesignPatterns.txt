@@ -1,6 +1,7 @@
 golden tip favor composition over inheritance 
 Decorator
+https://www.youtube.com/watch?v=iUZZ8aBYYtE
 ----------
 add additional behavior to the object (Rapper design pattern)
-if we use inhertance insteed it will end up with inhertance explosion and each new class can only do on feacher if you want add more than one feature inherit new class
+if we use inhertance insteed it will end up with inhertance explosion and we can't mix new functionalities together(each new class can only do on feacher if you want add more than one feature inherit new class)
 so that is not maintainable approach
