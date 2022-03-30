@@ -27,3 +27,17 @@ public class HelloMiddleWare
             //await _next.Invoke(context);
         }
     }
+-------------------------------
+default  used compontents
+StaticFiles => if the request ask for static file it short circt the request else pass to end Point routing middleware
+EndPoint Routing MiddleWare => decise which of the registered  controller end point should handle the request. then forward to UseAuthorization
+Authorization => it the user should be authorized or not
+endpoint => hands off the request to the mvc framework
+---------------------------------
+2)) Routing
+the process of mapping an incomming request to an end point.
+
+Routing types 
+conventional  routing => patterns to match a url to controller action method
+attribute routing =>     applied directly to controller action methods
+
