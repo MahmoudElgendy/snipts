@@ -33,6 +33,7 @@ StaticFiles => if the request ask for static file it short circt the request els
 EndPoint Routing MiddleWare => decise which of the registered  controller end point should handle the request. then forward to UseAuthorization
 Authorization => it the user should be authorized or not
 endpoint => hands off the request to the mvc framework
+
 ---------------------------------
 2)) Routing
 the process of mapping an incomming request to an end point.
@@ -40,4 +41,20 @@ the process of mapping an incomming request to an end point.
 Routing types 
 conventional  routing => patterns to match a url to controller action method
 attribute routing =>     applied directly to controller action methods
+------------------------------------------------------
+mvc concepts related to controllers , action methods, filters, razor views
+ResourceInvoker : ControllerActionInvoker
+after middelware and  endpoint Delegate execution  context data passed to resouse invoker class 
 
+filters allows us to inject code into various stages of request life cycle
+
+Authorization filter => the first filter to execute inside the mvc pipline
+Resource filter => execute logic at the start and end of mvc pipe line
+middleware filters =>execute middeleware in the context of the mvc.
+IActionFilter
+onActionExecuting => before action method
+onActionExecuted=> after action method
+-----------------------------------------
+IResultFilter
+onResultExecuting => before action result
+onResultExecuted=> after action result
