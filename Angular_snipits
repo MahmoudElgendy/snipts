@@ -33,6 +33,7 @@ vertical scale improve the characteristics of existing servers.(add more ram)
  installation steps
 1-  while installing node download the recommending version (last stable vertion)
 2- install angular  npm i -g @angular/cli
+
 3- if you want to upgrad your .ne go for dot net and download SDk(not runtime) then run it
 for vs code (some extenions)=> Angular Language,c#
 dotnet tool install --global dotnet-ef => helps you to use entityframework form command line
@@ -234,3 +235,18 @@ resolve=>optain data before activate route
 canload=>load feature module async
 --------------------------------------------
 httpinterceptors
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+---------------------------------Angular http communication ---------------------
+---------------------------------------------------------------------------------
+-- main tasks
+Consuming rest services  - Retrieving data with resolvers  - creating interceptors  - cashing data - interceptor
+rxjs=> js liberary for reactive programming with observables
+most httpclient methods retrun observables
+
+how to make httpclient available every where in the app
+in app.module import {httpclient} from '@angular/common/http'
+in  imports httpclientModule
+
+
