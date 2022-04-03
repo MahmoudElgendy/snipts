@@ -252,3 +252,9 @@ remember http client not only retrive json it can return differnet kind of data 
 rxjs operators => used with pipes to transform received observables
 map => same like automapper
 tap => do some taske before pass the observable to the next stage
+-- interceptors => write a piece of code in single place and apply it for every request or response.
+it is a service which implement HttpInterceptor interface
+manipulate http requests and responsed
+------------------
+Testing
+
