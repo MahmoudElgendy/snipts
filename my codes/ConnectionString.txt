@@ -1,0 +1,3 @@
+"ConnectionStrings": {
+    "DefaultConnection": "Data Source=DESKTOP-4DDGO3M\\SQLEXPRESS;Initial Catalog=Hangfire;Integrated Security=True"
+  },
