@@ -58,3 +58,12 @@ onActionExecuted=> after action method
 IResultFilter
 onResultExecuting => before action result
 onResultExecuted=> after action result
+=========================================================================
+================Hosted service and worker service =======================
+=========================================================================
+hosting servis (background srvice)
+
+=========================================================================
+================effictive logging =======================
+=========================================================================
+
