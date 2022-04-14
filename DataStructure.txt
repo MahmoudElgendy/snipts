@@ -83,3 +83,6 @@ Java's HashMap will return null.
 MyObject value = null;
 if (!myDictionary.TryGetValue(key, out value)) { /* key doesn't exist */ }
 Dictionary's has a ContainsKey method that can help deal with the previous two problems.
+
+contains key => o(1)
+contains value => o(n)
