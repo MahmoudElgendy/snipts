@@ -87,3 +87,4 @@ Dictionary's has a ContainsKey method that can help deal with the previous two p
 contains key => o(1)
 contains value => o(n)
 https://medium.com/javarevisited/top-20-linked-list-coding-problems-from-technical-interviews-90b64d2df093 => linkedList top 20 problem
+https://javarevisited.blogspot.com/2015/06/top-20-array-interview-questions-and-answers.html#axzz7QTZ8zeCy => array top 30
