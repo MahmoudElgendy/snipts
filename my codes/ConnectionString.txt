@@ -1,3 +1,10 @@
+appsetting.json
+
 "ConnectionStrings": {
     "DefaultConnection": "Data Source=DESKTOP-4DDGO3M\\SQLEXPRESS;Initial Catalog=Hangfire;Integrated Security=True"
   },
+  
+  
+  startup.cs
+  
+  services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
