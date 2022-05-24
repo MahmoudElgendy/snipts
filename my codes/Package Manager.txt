@@ -8,3 +8,8 @@ Install-Package Microsoft.EntityFrameworkCore.Tools -Version 5.0.10 -Project Dat
   <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10"/>
 </ItemGroup>
 Install-Package Microsoft.EntityFrameworkCore.Design -Version 5.0.10 -Project API
+
+<ItemGroup>
+ <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10"/>
+<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+</ItemGroup>
