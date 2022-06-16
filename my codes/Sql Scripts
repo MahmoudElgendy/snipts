@@ -1,1 +1,41 @@
--- comminng soon
+CREATE DATABASE erp;
+--drop database erp;
+go
+
+USE erp;
+go
+
+CREATE SCHEMA hr;
+-- drop schema hr;
+go
+
+--drop table hr.users
+CREATE TABLE hr.users
+  (
+     id      INT PRIMARY KEY IDENTITY(1, 1),
+     enname  VARCHAR(50) NOT NULL,
+     arname  VARCHAR(50) NOT NULL,
+     email   NVARCHAR(50) NOT NULL UNIQUE,
+     married BIT DEFAULT 1
+  );
+
+go
+
+-- add one column
+ALTER TABLE hr.users
+  ADD age INT
+
+-- add multi column
+ALTER TABLE hr.users
+  ADD size INT, grade INT, school NVARCHAR(50)
+
+-- drop one column
+ALTER TABLE hr.users
+  DROP COLUMN grade
+  
+  -- drop multi column
+ALTER TABLE hr.users
+  DROP COLUMN grade, COLUMN school
+  
+--ADD and DROP columns in a single ALTER
+-- not allowed in sql server
