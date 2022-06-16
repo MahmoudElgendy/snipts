@@ -39,3 +39,27 @@ ALTER TABLE hr.users
   
 --ADD and DROP columns in a single ALTER
 -- not allowed in sql server
+
+-- Insert in to table
+
+INSERT INTO hr.users
+            (arname,
+             enname)
+VALUES     (N'a',
+            N'b');
+
+INSERT INTO hr.users
+            (enname,
+             arname)
+VALUES     (N'en',
+            N'ar');            
+
+INSERT INTO hr.users
+VALUES     (N'a',
+            N'b'); -- use default order
+
+-- muliti insert
+INSERT INTO hr.users
+VALUES     (N'a',N'b'),
+            (N'a',N'b'),
+            (N'a',N'b') 
